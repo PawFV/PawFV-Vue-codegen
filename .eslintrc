@@ -1,0 +1,63 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "semi": ["error", "never"],
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/prefer-for-of": "warn",
+    "@typescript-eslint/triple-slash-reference": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/unified-signatures": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "constructor-super": "error",
+    "eqeqeq": ["warn", "always"],
+    "import/no-deprecated": "warn",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-unassigned-import": "off",
+    "import/no-unresolved": "off",
+    "no-cond-assign": "error",
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": "error",
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-invalid-this": "error",
+    "no-new-wrappers": "error",
+    "no-param-reassign": "error",
+    "no-redeclare": "error",
+    "no-sequences": "error",
+    "no-shadow": ["error", { "hoist": "all" }],
+    "no-throw-literal": "error",
+    "no-unsafe-finally": "error",
+    "no-unused-labels": "error",
+    "no-var": "warn",
+    "no-void": "error",
+    "prefer-const": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}

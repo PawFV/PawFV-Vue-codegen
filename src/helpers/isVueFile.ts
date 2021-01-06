@@ -1,0 +1,1 @@
+export default (fileName: string) => fileName.substr(-3) === 'vue'

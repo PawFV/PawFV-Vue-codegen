@@ -1,0 +1,1 @@
+export default (fileName: string) => fileName.split('.')[0]

@@ -1,0 +1,14 @@
+{
+  "watch": ["src"],
+  "exec": "ts-node ./src/index.ts",
+  "ext": "ts,json",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "execMap": {
+    "ts": "node --require ts-node/register"
+  },
+  "ignore": ["src/**/*.spec.ts", "src/views/*", "src/components/*", "build/*"],
+  "verbose": false,
+  "restarteable": "rs"
+}
